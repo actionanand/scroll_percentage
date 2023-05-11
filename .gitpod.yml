@@ -5,7 +5,7 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: yarn install && yarn run build
+  - name: Setup vite with yarn
+    before: nvm install v18.16.0
+    init: yarn install && yarn run build
     command: yarn run dev
-
-
